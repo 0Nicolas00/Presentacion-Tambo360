@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambo360 | Demo Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Glows -->
+    <div class="bg-glow top-left"></div>
+    <div class="bg-glow bottom-right"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar"
+        style="background: transparent; padding: 20px; box-shadow: none; border: none; height: auto; position: fixed; top: 0; left: 0; right: 0; z-index: 100;">
+        <div
+            style="background: white; border-radius: 50px; width: 95%; max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; height: 70px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div class="logo">
+                <img src="tambo-logo.png" alt="Tambo360 Logo" style="height: 40px; border-radius: 8px;">
+            </div>
+
+            <div class="nav-center">
+                <ul class="nav-links" style="display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="#contexto" style="color: #666; font-weight: 600; font-size: 0.95rem;">¿Qué es
+                            Tambo360?</a></li>
+                    <li><a href="#funcionalidades" style="color: #666; font-weight: 600; font-size: 0.95rem;">Contexto
+                            de Uso</a></li>
+                    <li><a href="#equipo" style="color: #666; font-weight: 600; font-size: 0.95rem;">Equipo</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="#demo" class="btn-tambo">Demo
+                    Final</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="smooth-scroll-wrapper">
+        <!-- 1. Hero Section -->
+        <section id="hero" class="fullscreen reveal">
+            <!-- Hero Background Image -->
+            <div class="hero-bg-container">
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%); z-index: 1;">
+                </div>
+                <img src="hero-bg.jpg" alt="Vacas en el campo" class="hero-bg-image"
+                    style="opacity: 1; filter: none; z-index: 0; position: relative;">
+            </div>
+
+            <div class="container hero-content"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; z-index: 2; position: relative;">
+                <div class="text-column" style="max-width: 900px; margin: 0 auto;">
+                    <span class="badge"
+                        style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white;">SaaS
+                        B2B Lácteo</span>
+                    <h1 class="gradient-text"
+                        style="color: white; background: none; -webkit-text-fill-color: white; text-shadow: 0 4px 20px rgba(0,0,0,0.4); margin-bottom: 2rem;">
+                        Simplicidad operativa desde el tambo.</h1>
+                    <p class="subtitle"
+                        style="color: #f0f0f0; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-size: 1.5rem; max-width: 800px; margin: 0 auto;">
+                        Digitalizando el registro diario de producción, mermas y costos sin introducir complejidad
+                        técnica innecesaria.</p>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" style="z-index: 2; position: absolute;">
+                <span style="color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Descubre la historia</span>
+                <div class="mouse" style="border-color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.5);">
+                    <div
+                        style="width: 4px; height: 8px; background: white; border-radius: 2px; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); animation: scroll 2s infinite;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Context / Story (Stacked Cards) -->
+        <section id="contexto" style="padding-bottom: 15vh;">
+            <div class="stacked-cards-container container">
+
+                <!-- Card 1 -->
+                <div class="stacked-card card-1 reveal slide-up">
+                    <div class="card-content">
+                        <h2 class="card-title">¿Qué es Tambo360?</h2>
+                        <p class="card-desc">Un sistema que centraliza el registro de los datos operativos básicos del
+                            establecimiento para tener una visión integral de la producción, las mermas y los costos
+                            directos, sin introducir complejidad técnica innecesaria ni modificar los procesos
+                            cotidianos del usuario.</p>
+
+                        <div class="card-tags">
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #ff5f56, #ffbd2e);"></span>Sistema
+                                Centralizado</span>
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #27c93f, #11a6a6);"></span>Sin
+                                Complejidad</span>
+                        </div>
+                    </div>
+                    <div class="card-visual"
+                        style="background: linear-gradient(135deg, #e0e0e0, #f8f9fa); position: relative;">
+                        <!-- Abstract shapes placeholder -->
+                        <div
+                            style="position: absolute; width: 250px; height: 250px; background: white; border-radius: 50%; top: 15%; left: 10%; opacity: 0.8; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+                        </div>
+                        <div
+                            style="position: absolute; width: 150px; height: 150px; background: rgba(255,255,255,0.5); border-radius: 50%; bottom: 15%; right: 10%; backdrop-filter: blur(10px);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="stacked-card card-2 reveal slide-up delay-1"
+                    style="background: linear-gradient(135deg, #e0f6f9, #8DDFEB); color: var(--text-primary); border-color: rgba(141, 223, 235, 0.3);">
+                    <div class="card-content">
+                        <h2 class="card-title">El Problema</h2>
+                        <p class="card-desc">En el contexto actual de crecimiento productivo, los establecimientos de
+                            menor escala enfrentan dificultades para mantener el control y seguimiento de su propia
+                            operación.</p>
+                        <p class="card-desc" style="margin-top: 1rem;">El registro de producción de forma analógica
+                            limita la comprensión del comportamiento real de la producción a lo largo del tiempo y
+                            genera pérdidas económicas que no pueden ser identificadas ni analizadas de manera
+                            sistemática.</p>
+
+                        <div class="card-tags">
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #9D72FF, #D97728);"></span>Pérdidas
+                                Económicas</span>
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #FF729D, #e53e3e);"></span>Falta de
+                                Control</span>
+                        </div>
+                    </div>
+                    <div class="card-visual"
+                        style="background: rgba(255, 255, 255, 0.4); position: relative; border-left: 1px solid rgba(255,255,255,0.5);">
+                        <!-- Abstract shapes placeholder -->
+                        <div
+                            style="position: absolute; width: 120px; height: 280px; background: rgba(255,255,255,0.7); border-radius: 100px; top: 10%; right: 25%; transform: rotate(35deg); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        </div>
+                        <div
+                            style="position: absolute; width: 140px; height: 140px; background: rgba(255,255,255,0.5); border-radius: 30px; bottom: 20%; left: 20%; transform: rotate(-15deg); backdrop-filter: blur(5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="stacked-card card-3 reveal slide-up delay-2">
+                    <div class="card-content">
+                        <h2 class="card-title">Objetivos</h2>
+                        <ul class="card-list">
+                            <li>Permitir el registro ordenado de la información del negocio: producción por lotes,
+                                mermas y costos operativos directos.</li>
+                            <li>Indicadores operativos básicos que reflejen el comportamiento de la producción en el
+                                tiempo.</li>
+                            <li>IA que detecte desvíos productivos relevantes.</li>
+                            <li>Ofrecer una interfaz moderna, limpia y agradable, orientada a usuarios no técnicos y
+                                optimizada para su uso cotidiano en tablet.</li>
+                        </ul>
+                    </div>
+                    <div class="card-visual"
+                        style="background: linear-gradient(135deg, #E2F0D9, #cce6bd); position: relative;">
+                        <!-- Abstract shapes placeholder -->
+                        <div
+                            style="position: absolute; width: 280px; height: 280px; background: rgba(255,255,255,0.5); border-radius: 40%; top: 50%; left: 50%; transform: translate(-50%, -50%); backdrop-filter: blur(15px); box-shadow: 0 20px 50px rgba(0,0,0,0.05);">
+                        </div>
+                        <div
+                            style="position: absolute; width: 100px; height: 100px; background: rgba(255,255,255,0.8); border-radius: 50%; top: 20%; left: 60%;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Contexto de Uso / Funcionalidades -->
+        <section id="funcionalidades" class="scroll-gather-section">
+            <div class="scroll-gather-sticky">
+                <div class="gather-header">
+                    <span class="badge">Contexto de Uso</span>
+                    <h2 class="section-title">Comprehensión del Entorno</h2>
+                    <p class="description mx-auto" style="max-width: 600px;">
+                        Digitalizar la gestión sin pedirle al tambero que se convierta en un experto en software.
+                    </p>
+                </div>
+
+                <div class="gather-grid">
+                    <!-- Card 1 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-factory"></i></div>
+                        <h3>Entorno operativo activo</h3>
+                        <p class="context-desc">La planta productiva es física, ruidosa y en movimiento constante.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Flujos simples y directos</h4>
+                                <p>Sin pasos innecesarios. Registro en pocos pasos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-device-mobile"></i></div>
+                        <h3>Uso táctil en tablet</h3>
+                        <p class="context-desc">Interacción táctil, sesiones cortas y frecuentes.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Dashboard inicial</h4>
+                                <p>La información clave visible desde primer instante.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-lightning"></i></div>
+                        <h3>Interacción rápida</h3>
+                        <p class="context-desc">Registro y consulta en segundos, no minutos.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Diseño funcional</h4>
+                                <p>Sin decoración innecesaria, enfocado a la tarea.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-users"></i></div>
+                        <h3>Perfil no técnico</h3>
+                        <p class="context-desc">+10 años de experiencia, baja alfabetización digital.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Alertas descriptivas</h4>
+                                <p>Explicaciones claras, sin tecnicismos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-chart-bar"></i></div>
+                        <h3>Alta carga operativa</h3>
+                        <p class="context-desc">Ordeñe, quesos, costos. El sistema debe integrarse.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Valor inmediato</h4>
+                                <p>El sistema funciona incluso con registros parciales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Team Contributions Section (Timeline) -->
+        <section id="equipo" class="team-timeline-section"
+            style="padding: 100px 0; background: var(--bg-color); position: relative;">
+            <div class="container" style="position: relative;">
+                <h2 class="section-title text-center mb-4">Construido desde cada perspectiva</h2>
+
+                <div class="timeline-container">
+                    <!-- Central Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- PM -->
+                    <div class="timeline-item left reveal fade-right">
+                        <div class="timeline-dot"><i class="ph ph-target"></i></div>
+                        <div class="role-card">
+                            <h3>Product Manager</h3>
+                            <p>Definió la visión del producto, priorizó las funcionalidades core para MVP y alineó a los
+                                stakeholders de la cooperativa.</p>
+                        </div>
+                    </div>
+
+                    <!-- UX -->
+                    <div class="timeline-item right reveal fade-left delay-1">
+                        <div class="timeline-dot"><i class="ph ph-sparkle"></i></div>
+                        <div class="role-card">
+                            <h3>UX/UI Design</h3>
+                            <p>Aterrizó el "principio de simplicidad" diseñando interfaces de botones grandes, flujos de
+                                carga rápidos y contraste claro.</p>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="timeline-item left reveal fade-right delay-2">
+                        <div class="timeline-dot"><i class="ph ph-gear"></i></div>
+                        <div class="role-card">
+                            <h3>Backend</h3>
+                            <p>Creó la arquitectura de datos para manejar fincas, lotes y registros diarios, con
+                                integraciones robustas y APIs rápidas.</p>
+                        </div>
+                    </div>
+
+                    <!-- QA -->
+                    <div class="timeline-item right reveal fade-left delay-3">
+                        <div class="timeline-dot"><i class="ph ph-bug"></i></div>
+                        <div class="role-card">
+                            <h3>QA</h3>
+                            <p>Aseguró que la plataforma funcione impecablemente en todas las resoluciones de tablet,
+                                previniendo pérdidas de datos de producción.</p>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="timeline-item left reveal fade-right delay-4">
+                        <div class="timeline-dot"
+                            style="background: var(--accent-secondary); color: white; border-color: var(--accent-secondary);">
+                            <i class="ph ph-palette"></i>
+                        </div>
+                        <div class="role-card" style="border-color: var(--accent-secondary); border-width: 2px;">
+                            <h3>Frontend</h3>
+                            <p>Implementó el sistema de diseño enfocado en la usabilidad táctil y la conexión en tiempo
+                                real con la base de datos, <strong>dando vida a la demo a continuación.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Demo Section -->
+        <section id="demo" class="fullscreen text-center pb-4">
+            <div class="container reveal">
+                <h2 class="section-title">La solución en acción</h2>
+                <p class="description mx-auto mb-4">Mira cómo Tambo360 facilita el registro diario de producción en una
+                    sesión rápida desde la tablet.</p>
+
+                <div class="demo-wrapper reveal zoom-in delay-1" style="
+                    max-width: 900px;
+                    background: #1e1e1e;
+                    padding: 20px 25px 20px 20px;
+                    border-radius: 24px;
+                    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                ">
+                    <!-- Camera hole -->
+                    <div
+                        style="width: 10px; height: 10px; background: #333; border-radius: 50%; position: absolute; left: 10px; top: 50%; transform: translateY(-50%);">
+                    </div>
+
+                    <!-- Screen -->
+                    <div style="
+                        width: 100%;
+                        background: white;
+                        border-radius: 12px;
+                        overflow: hidden;
+                        aspect-ratio: 4/3;
+                        display: flex;
+                        position: relative;
+                    ">
+                        <img src="dashboard-screen.png" alt="Tambo360 Dashboard Demo"
+                            style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                        <div class="play-button"
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); cursor: pointer;">
+                            ▶</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Minimalista -->
+        <footer style="padding: 4rem 2rem; background: #0B1001; text-align: center;">
+            <div class="container"
+                style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                <!-- Logo -->
+                <img src="tambo-logo.png" alt="Tambo360 Logo"
+                    style="height: 35px; opacity: 0.5; filter: brightness(0) invert(1); transition: opacity 0.3s ease;">
+
+                <!-- Links (Optional but helps minimalism) -->
+                <div style="display: flex; gap: 2rem; justify-content: center;">
+                    <a href="#hero"
+                        style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 500;">Inicio</a>
+                    <a href="#funcionalidades"
+                        style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 500;">Funcionalidades</a>
+                    <a href="#demo"
+                        style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 500;">Demo</a>
+                </div>
+
+                <!-- Copyright -->
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem; margin-top: 1rem;">
+                    &copy; 2026 Tambo360. Todos los derechos reservados.<br>Simplicidad operativa desde el tambo a la
+                    cooperativa.
+                </p>
+            </div>
+
+            <script>
+                // Pequeño script para el hover del logo en el footer oscuro
+                document.querySelector('footer img').addEventListener('mouseenter', function () {
+                    this.style.opacity = '1';
+                });
+                document.querySelector('footer img').addEventListener('mouseleave', function () {
+                    this.style.opacity = '0.5';
+                });
+            </script>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
