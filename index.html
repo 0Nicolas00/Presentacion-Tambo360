@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambo360 | Presentacion</title>
+    <link rel="icon" type="image/png" href="tambo-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Glows -->
+    <div class="bg-glow top-left"></div>
+    <div class="bg-glow bottom-right"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar"
+        style="background: transparent; padding: 20px; box-shadow: none; border: none; height: auto; position: fixed; top: 0; left: 0; right: 0; z-index: 100;">
+        <div
+            style="background: white; border-radius: 50px; width: 95%; max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; height: 70px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div class="logo">
+                <img src="tambo-logo.png" alt="Tambo360 Logo" style="height: 40px; border-radius: 8px;">
+            </div>
+
+            <div class="nav-center">
+                <ul class="nav-links" style="display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="#contexto">¿Qué es Tambo360?</a></li>
+                    <li><a href="#funcionalidades">Contexto de Uso</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="#demo" class="btn-tambo">Demo
+                    Final</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="smooth-scroll-wrapper">
+        <!-- 1. Hero Section -->
+        <section id="hero" class="fullscreen reveal">
+            <!-- Hero Background Image -->
+            <div class="hero-bg-container">
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%); z-index: 1;">
+                </div>
+                <img src="hero-bg.jpg" alt="Vacas en el campo" class="hero-bg-image"
+                    style="opacity: 1; filter: none; z-index: 0; position: relative;">
+            </div>
+
+            <div class="container hero-content"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; z-index: 2; position: relative;">
+                <div class="text-column" style="max-width: 900px; margin: 0 auto;">
+                    <span class="badge"
+                        style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white;">SaaS
+                        B2B Lácteo</span>
+                    <h1 class="gradient-text"
+                        style="color: white; background: none; -webkit-text-fill-color: white; text-shadow: 0 4px 20px rgba(0,0,0,0.4); margin-bottom: 2rem;">
+                        Simplicidad operativa desde el tambo.</h1>
+                    <p class="subtitle"
+                        style="color: #f0f0f0; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-size: 1.5rem; max-width: 800px; margin: 0 auto;">
+                        Digitalizando el registro diario de producción, mermas y costos sin introducir complejidad
+                        técnica innecesaria.</p>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" style="z-index: 2; position: absolute;">
+                <span style="color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Descubre la historia</span>
+                <div class="mouse" style="border-color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.5);">
+                    <div
+                        style="width: 4px; height: 8px; background: white; border-radius: 2px; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); animation: scroll 2s infinite;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestro Equipo Section -->
+        <section id="nuestro-equipo" class="team-intro-section">
+            <div class="container">
+                <div class="team-intro-header">
+                    <h2 class="section-title">Nuestro Equipo</h2>
+                    <p class="description">El grupo que contruyo Tambo360.</p>
+                    <div class="team-intro-line"></div>
+                </div>
+
+                <div class="team-intro-grid">
+                    <!-- Product Management -->
+                    <div class="team-intro-card">
+                        <h3 class="team-intro-role">PM</h3>
+                        <ul class="team-intro-names">
+                            <li>Lorena Paola Sartori</li>
+                        </ul>
+                    </div>
+
+                    <!-- Diseño UX/UI -->
+                    <div class="team-intro-card">
+                        <h3 class="team-intro-role">Diseño UX/UI</h3>
+                        <ul class="team-intro-names">
+                            <li>Cintia Gimena Jaqueline Duarte</li>
+                            <li>Nicolas Mansilla Torres</li>
+                        </ul>
+                    </div>
+
+                    <!-- Desarrollo Backend -->
+                    <div class="team-intro-card">
+                        <h3 class="team-intro-role">Backend</h3>
+                        <ul class="team-intro-names">
+                            <li>Facundo Leonel Fernández</li>
+                            <li>Nicolas De Bella</li>
+                            <li>Tomas Francisco Ferrer</li>
+                            <li>Juan Ignacio Meza Wakahayashi</li>
+                        </ul>
+                    </div>
+
+                    <!-- Desarrollo Frontend -->
+                    <div class="team-intro-card">
+                        <h3 class="team-intro-role">Frontend</h3>
+                        <ul class="team-intro-names">
+                            <li>Angel Gabriel Nievas</li>
+                            <li>Ornella Meolans</li>
+                        </ul>
+                    </div>
+
+                    <!-- Garantía de Calidad (QA) -->
+                    <div class="team-intro-card">
+                        <h3 class="team-intro-role">QA</h3>
+                        <ul class="team-intro-names">
+                            <li>Nicolas Martin Pavon</li>
+                            <li>Tatiana Aylen Tablada</li>
+                            <li>Eliana Naily Proserpio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Context / Story (Stacked Cards) -->
+        <section id="contexto" style="padding-bottom: 15vh; background-color: #FFFBF1;">
+            <div class="stacked-cards-container container">
+
+                <!-- Card 1 -->
+                <div class="stacked-card card-1 reveal slide-up">
+                    <div class="card-content">
+                        <h2 class="card-title">¿Qué es Tambo360?</h2>
+                        <p class="card-desc">Un sistema que centraliza el registro de los datos operativos básicos del
+                            establecimiento para tener una visión integral de la producción, las mermas y los costos
+                            directos, sin introducir complejidad técnica innecesaria ni modificar los procesos
+                            cotidianos del usuario.</p>
+
+                        <div class="card-tags">
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #ff5f56, #ffbd2e);"></span>Sistema
+                                Centralizado</span>
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #ff5f56, #ffbd2e);"></span>Sin
+                                Complejidad</span>
+                        </div>
+                    </div>
+                    <div class="card-visual" style="background: #f0f0f0; position: relative;">
+                        <img src="Tambo360.png" alt="Tambo360 - Establecimiento lechero"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="stacked-card card-2 reveal slide-up delay-1"
+                    style="background: linear-gradient(135deg, #e0f6f9, #8DDFEB); color: var(--text-primary); border-color: rgba(141, 223, 235, 0.3);">
+                    <div class="card-content">
+                        <h2 class="card-title">Problema</h2>
+                        <p class="card-desc">En el contexto actual de crecimiento productivo, los establecimientos de
+                            menor escala enfrentan dificultades para mantener el control y seguimiento de su propia
+                            operación.</p>
+                        <p class="card-desc" style="margin-top: 1rem;">El registro de producción de forma analógica
+                            limita la comprensión del comportamiento real de la producción a lo largo del tiempo y
+                            genera pérdidas económicas que no pueden ser identificadas ni analizadas de manera
+                            sistemática.</p>
+
+                        <div class="card-tags">
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #e53e3e);"></span>Pérdidas
+                                Económicas</span>
+                            <span class="tag"><span class="tag-dot"
+                                    style="background: linear-gradient(135deg, #e53e3e);"></span>Falta de
+                                Control</span>
+                        </div>
+                    </div>
+                    <div class="card-visual" style="background: rgba(255, 255, 255, 0.35); position: relative;">
+                        <img src="Problema.png" alt="Registro analógico - El problema"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="stacked-card card-3 reveal slide-up delay-2">
+                    <div class="card-content">
+                        <h2 class="card-title">Objetivos</h2>
+                        <ul class="card-list">
+                            <li>Permitir el registro ordenado de la información del negocio: producción por lotes,
+                                mermas y costos operativos directos.</li>
+                            <li>Indicadores operativos básicos que reflejen el comportamiento de la producción en el
+                                tiempo.</li>
+                            <li>IA que detecte desvíos productivos relevantes.</li>
+                            <li>Ofrecer una interfaz moderna, limpia y agradable, orientada a usuarios no técnicos y
+                                optimizada para su uso cotidiano en tablet.</li>
+                        </ul>
+                    </div>
+                    <div class="card-visual" style="background: #d9e8cd; position: relative;">
+                        <img src="Objetivos.png" alt="Objetivos - Tablet en tambo"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Contexto de Uso / Funcionalidades -->
+        <section id="funcionalidades" class="scroll-gather-section">
+            <div class="scroll-gather-sticky">
+                <div class="gather-header">
+                    <span class="badge">Contexto de Uso</span>
+                    <h2 class="section-title">Comprensión del Entorno</h2>
+                    <p class="description mx-auto" style="max-width: 600px;">
+                        Digitalizar la gestión sin pedirle al tambero que se convierta en un experto en software.
+                    </p>
+                </div>
+
+                <div class="gather-grid">
+                    <!-- Card 1 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-factory"></i></div>
+                        <h3>Entorno operativo activo</h3>
+                        <p class="context-desc">La planta productiva es física y en movimiento constante.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Flujos simples y directos</h4>
+                                <p>Sin pasos innecesarios. Registro en pocos pasos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-device-mobile"></i></div>
+                        <h3>Uso en tablet</h3>
+                        <p class="context-desc">Interacción táctil, sesiones cortas y frecuentes.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Dashboard inicial</h4>
+                                <p>La información clave visible desde primer instante.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-lightning"></i></div>
+                        <h3>Interacción rápida</h3>
+                        <p class="context-desc">Interacción ágil para resolver tareas rápidamente.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Diseño funcional</h4>
+                                <p>Sin decoración innecesaria, enfocado a la tarea.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-users"></i></div>
+                        <h3>Perfil no técnico</h3>
+                        <p class="context-desc">Baja alfabetización digital.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Alertas descriptivas</h4>
+                                <p>Explicaciones claras, sin tecnicismos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="gather-card">
+                        <div class="card-icon"><i class="ph ph-chart-bar"></i></div>
+                        <h3>Alta carga operativa</h3>
+                        <p class="context-desc">Produccion, mermas, costos.</p>
+                        <div class="gather-response">
+                            <div class="check">✓</div>
+                            <div>
+                                <h4>Valor inmediato</h4>
+                                <p>El sistema funciona incluso con registros parciales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Team Contributions Section (Timeline) -->
+        <section id="equipo" class="team-timeline-section"
+            style="padding: 100px 0; background: var(--bg-color); position: relative;">
+            <div class="container" style="position: relative;">
+                <h2 class="section-title text-center mb-4">Construido desde cada perspectiva</h2>
+                <div class="timeline-container">
+                    <!-- Central Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- UX -->
+                    <div id="ux-card" class="timeline-item right reveal fade-left delay-1" style="cursor: pointer;">
+                        <div class="timeline-dot"><i class="ph ph-sparkle"></i></div>
+                        <div class="role-card">
+                            <h3>Diseño UX/UI</h3>
+                            <div class="card-tags" style="margin-top: 0; margin-bottom: 1rem;">
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #9D72FF, #D97728);"></span>Cintia
+                                    Gimena Jaqueline Duarte</span>
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #9D72FF, #D97728);"></span>Nicolas
+                                    Mansilla Torres</span>
+                            </div>
+                            <p>Investigar usuarios, diseñar arquitectura de la información, flujos de usuario,
+                                wireframes y entregar pantallas funcionales.</p>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div id="backend-card" class="timeline-item left reveal fade-right delay-2"
+                        style="cursor: pointer;">
+                        <div class="timeline-dot"><i class="ph ph-gear"></i></div>
+                        <div class="role-card">
+                            <h3>Backend</h3>
+                            <div class="card-tags" style="margin-top: 0; margin-bottom: 1rem;">
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #27c93f, #11a6a6);"></span>Tomas
+                                    Francisco Ferrer</span>
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #27c93f, #11a6a6);"></span>Juan
+                                    Ignacio Meza Wakahayashi</span>
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #27c93f, #11a6a6);"></span>Facundo
+                                    Leonel Fernández</span>
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #27c93f, #11a6a6);"></span>Nicolas De
+                                    Bella</span>
+                            </div>
+                            <p>Desarrolla la lógica principal del sistema. Se encarga de validar datos, aplicar reglas
+                                de negocio, manejar la base de datos y conectar el sistema con otros servicios como el
+                                módulo de IA. Es el núcleo del sistema.</p>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="timeline-item right reveal fade-left delay-1">
+                        <div class="timeline-dot"
+                            style="background: var(--accent-secondary); color: white; border-color: var(--accent-secondary);">
+                            <i class="ph ph-palette"></i>
+                        </div>
+                        <div class="role-card" style="border-color: var(--accent-secondary); border-width: 2px;">
+                            <h3>Frontend</h3>
+                            <div class="card-tags" style="margin-top: 0; margin-bottom: 1rem;">
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #2C7A7B, #38B2AC);"></span>Ornella
+                                    Meolans</span>
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #2C7A7B, #38B2AC);"></span>Angel
+                                    Gabriel Nievas</span>
+                            </div>
+                            <p>Desarrolla la interfaz que ve el usuario en el navegador. Muestra la información y
+                                permite cargar datos, comunicándose con el backend mediante una API.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- QA -->
+                    <div id="qa-card" class="timeline-item left reveal fade-right delay-2" style="cursor: pointer;">
+                        <div class="timeline-dot"><i class="ph ph-bug"></i></div>
+                        <div class="role-card">
+                            <h3>QA</h3>
+                            <div class="card-tags" style="margin-top: 0; margin-bottom: 1rem;">
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #FF729D, #e53e3e);"></span>Nicolas
+                                    Martin Pavon</span>
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #FF729D, #e53e3e);"></span>Tatiana
+                                    Aylen Tablada</span>
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #FF729D, #e53e3e);"></span>Eliana
+                                    Naily Proserpio</span>
+                            </div>
+                            <p>Redactar casos de prueba detallados, testear funcionalidad, usabilidad, reportar bugs,
+                                validar correcciones y garantizar calidad.</p>
+                        </div>
+                    </div>
+
+                    <!-- PM -->
+                    <div id="pm-card" class="timeline-item right reveal fade-left delay-1" style="cursor: pointer;">
+                        <div class="timeline-dot"><i class="ph ph-target"></i></div>
+                        <div class="role-card">
+                            <h3>Product Manager</h3>
+                            <div class="card-tags" style="margin-top: 0; margin-bottom: 1rem;">
+                                <span class="tag"><span class="tag-dot"
+                                        style="background: linear-gradient(135deg, #ff5f56, #ffbd2e);"></span>Lorena
+                                    Paola Sartori</span>
+                            </div>
+                            <p>Coordinar al equipo, definir el backlog, asignar tareas, organizar y liderar las
+                                reuniones daily y garantizar el cumplimiento de hitos.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Demo Section -->
+        <section id="demo" class="fullscreen text-center pb-4" style="background-color: var(--bg-color);">
+            <div class="container reveal">
+                <h2 class="section-title">Gracias por acompañarnos</h2>
+                <p class="description mx-auto mb-4">Tambo360 es una solución construida a partir de las necesidades
+                    reales del
+                    sector y del trabajo interdisciplinario del equipo.</p>
+            </div>
+            </div>
+        </section>
+
+        <!-- Footer Minimalista -->
+        <footer style="padding: 4rem 2rem; background: #0B1001; text-align: center;">
+            <div class="container"
+                style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                <!-- Logos -->
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <img src="tambo-logo.png" alt="Tambo360 Logo"
+                        style="height: 35px; opacity: 0.5; filter: brightness(0) invert(1); transition: opacity 0.3s ease;">
+                    <img src="igrowker-logo.png" alt="Igrowker Logo"
+                        style="height: 30px; opacity: 0.5; filter: brightness(0) invert(1); transition: opacity 0.3s ease;">
+                </div>
+
+                <!-- Links (Optional but helps minimalism) -->
+                <div style="display: flex; gap: 2rem; justify-content: center;">
+                    <a href="#hero"
+                        style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 500;">Inicio</a>
+                    <a href="#funcionalidades"
+                        style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 500;">Funcionalidades</a>
+                    <a href="#demo"
+                        style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; font-weight: 500;">Demo</a>
+                </div>
+
+                <!-- Copyright -->
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem; margin-top: 1rem;">
+                    &copy; 2026 Tambo360. Todos los derechos reservados.<br>Simplicidad operativa desde el tambo a la
+                    cooperativa.
+                </p>
+            </div>
+
+            <script>
+                // Pequeño script para el hover de los logos en el footer oscuro
+                document.querySelectorAll('footer img').forEach(img => {
+                    img.addEventListener('mouseenter', function () {
+                        this.style.opacity = '1';
+                    });
+                    img.addEventListener('mouseleave', function () {
+                        this.style.opacity = '0.5';
+                    });
+                });
+            </script>
+        </footer>
+
+    </main>
+
+    <!-- PM Detail Modal -->
+    <div id="pm-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="header-left">
+                    <div class="header-icon">
+                        <i class="ph ph-target"></i>
+                    </div>
+                    <span class="header-title">Detalles del Rol</span>
+                </div>
+                <button class="modal-close-btn" id="pm-modal-close-x">
+                    <i class="ph ph-x"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <span class="specialty-badge">ESPECIALIDAD</span>
+                <h2 class="modal-role-title">Product Manager</h2>
+                <p class="modal-role-subtitle">Coordinación y visión estratégica del producto</p>
+
+                <!-- Section 1: Alcance -->
+                <div class="pm-section">
+                    <div class="pm-section-header">
+                        <div class="pm-section-icon"><i class="ph ph-briefcase"></i></div>
+                        <h3>Cumplimiento del alcance funcional del MVP</h3>
+                    </div>
+                    <div class="pm-section-content">
+                        <p class="pm-main-desc"><strong>6/6 Funcionalidades</strong></p>
+                        <ul class="pm-check-list">
+                            <li><i class="ph ph-check-circle"></i> Establec. · Usuarios · Lotes · Mermas · Costos ·
+                                Indicadores operativos
+                            </li>
+                            <li><i class="ph ph-check-circle"></i><strong>TamboEngine</strong>Integración completa del
+                                módulo de inteligencia artificial</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Section 2: Coordinación -->
+                <div class="pm-section">
+                    <div class="pm-section-header">
+                        <div class="pm-section-icon"><i class="ph ph-presentation-chart"></i></div>
+                        <h3>Coordinación efectiva y cumplimiento de entregables</h3>
+                    </div>
+                    <div class="pm-section-content">
+                        <div class="pm-stats-grid">
+                            <div class="pm-stat-card">
+                                <span class="pm-stat-num">85 / 85</span>
+                                <span class="pm-stat-label">Tareas Completadas</span>
+                            </div>
+                            <div class="pm-stat-card">
+                                <span class="pm-stat-num">5</span>
+                                <span class="pm-stat-label">Semanas de Ejecución</span>
+                            </div>
+                        </div>
+                        <p class="pm-sub-desc">Frontend, Backend y QA alineados y coordinados durante todo el desafío.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 3: Calidad -->
+                <div class="pm-section">
+                    <div class="pm-section-header">
+                        <div class="pm-section-icon"><i class="ph ph-shield-check"></i></div>
+                        <h3>Calidad e integración del producto</h3>
+                    </div>
+                    <div class="pm-section-content">
+                        <div class="pm-progress-wrapper">
+                            <div class="pm-progress-header">
+                                <span>Flujo E2E validado</span>
+                                <span class="pm-pct">100%</span>
+                            </div>
+                            <div class="pm-progress-bg">
+                                <div class="pm-progress-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <ul class="pm-check-list">
+                            <li><i class="ph ph-check-circle"></i> Integración completa Frontend – Backend – TamboEngine
+                                (IA) · Deploy en producción
+                            </li>
+                            <li><i class="ph ph-check-circle"></i>Bugs críticos identificados y resueltos · Definition
+                                of Done cumplida</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UX Detail Modal -->
+    <div id="ux-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="header-left">
+                    <div class="header-icon">
+                        <i class="ph ph-sparkle"></i>
+                    </div>
+                    <span class="header-title">Detalles del Rol</span>
+                </div>
+                <button class="modal-close-btn" id="ux-modal-close-x">
+                    <i class="ph ph-x"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <span class="specialty-badge">ESPECIALIDAD</span>
+                <h2 class="modal-role-title">Diseño UX/UI</h2>
+                <p class="modal-role-subtitle">Diseño centrado en el usuario y experiencia fluida</p>
+
+                <div class="detail-timeline">
+                    <!-- Usuario y problema UX -->
+                    <div class="detail-item">
+                        <div class="detail-dot risks">
+                            <i class="ph ph-user-focus"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3 class="detail-title">Usuario y problema</h3>
+                            <!-- Usuario y problema UX -->
+                            <div class="principle-card horizontal">
+                                <div class="principle-content">
+                                    <h4 class="principle-name orange">Planteamiento</h4>
+                                    <p class="principle-desc">Se analiza al usuario y sus necesidades para identificar
+                                        un problema real y diseñar una solución que mejore su experiencia.</p>
+                                </div>
+                                <div class="principle-visual">
+                                    <img src="Problema-UX.png" alt="Problema UX" class="qa-thumbnail"
+                                        onclick="openLightbox('Problema-UX.png')">
+                                    <img src="Persona-UX.png" alt="Persona UX" class="qa-thumbnail"
+                                        onclick="openLightbox('Persona-UX.png')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Principios -->
+                    <div class="detail-item">
+                        <div class="detail-dot tests">
+                            <i class="ph ph-pencil-circle"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3 class="detail-title">Principios de diseño</h3>
+                            <!-- Nevegacion -->
+                            <div class="principle-card horizontal">
+                                <div class="principle-content">
+                                    <h4 class="principle-name orange">Navegación</h4>
+                                    <p class="principle-desc">Se implementó una navegación clara y simple para que el
+                                        usuario pueda acceder a las funcionalidades principales de la aplicación.</p>
+                                </div>
+                                <div class="principle-visual">
+                                    <img src="Navegacion-UX.png" alt="Navegacion UX" class="qa-thumbnail"
+                                        onclick="openLightbox('Navegacion-UX.png')">
+                                </div>
+                            </div>
+                            <!-- Interaccion -->
+                            <div class="principle-card horizontal">
+                                <div class="principle-content">
+                                    <h4 class="principle-name orange">Interacción</h4>
+                                    <p class="principle-desc">En los formularios tendra que llenar pocos imputs para asi
+                                        lograr un registro rapido mientras cumple su funcion.</p>
+                                </div>
+                                <div class="principle-visual">
+                                    <img src="Interaccion-UX.png" alt="Interaccion UX" class="qa-thumbnail"
+                                        onclick="openLightbox('Interaccion-UX.png')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QA Detail Modal -->
+    <div id="qa-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="header-left">
+                    <div class="header-icon">
+                        <i class="ph ph-bug"></i>
+                    </div>
+                    <span class="header-title">Detalles del Rol</span>
+                </div>
+                <button class="modal-close-btn" id="modal-close-x">
+                    <i class="ph ph-x"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <span class="specialty-badge">ESPECIALIDAD</span>
+                <h2 class="modal-role-title">QA</h2>
+                <p class="modal-role-subtitle">Garantizar la calidad y estabilidad del producto</p>
+
+                <div class="detail-timeline">
+                    <!-- Riesgos -->
+                    <div class="detail-item">
+                        <div class="detail-dot risks">
+                            <i class="ph ph-users-three"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3 class="detail-title">Riesgos relevantes</h3>
+                            <div class="detail-card gray">
+                                <p><strong>Acceso de datos cruzados:</strong> Un usuario puede visualizar información
+                                    del establecimiento de otro usuario. Se pretende mitigar este riesgo mediante el
+                                    diseño y ejecución de pruebas que permitan impedir que se produzcan estos accesos.
+                                </p>
+                                <p><strong>Inestabilidad de conexión:</strong> Pérdida de datos críticos durante el
+                                    registro de lotes o mermas y frustración del usuario. Se pretende mitigar este
+                                    riesgo mediante Implementar manejo de errores de red mediante pantallas de error
+                                    diseñadas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pruebas -->
+                    <div class="detail-item">
+                        <div class="detail-dot tests">
+                            <i class="ph ph-star"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3 class="detail-title">Pruebas Principales</h3>
+                            <div class="principles-grid">
+                                <!-- Pruebas funcionales -->
+                                <div class="principle-card horizontal">
+                                    <div class="principle-content">
+                                        <h4 class="principle-name orange">Pruebas funcionales</h4>
+                                        <p class="principle-desc">Se probó el registro de usuario,
+                                            establecimiento, inicio de sesión y registro de un lote.</p>
+                                    </div>
+                                    <div class="principle-visual">
+                                        <img src="ResultadosQA-1.png" alt="Resultados QA" class="qa-thumbnail"
+                                            onclick="openLightbox('ResultadosQA-1.png')">
+                                    </div>
+                                </div>
+
+                                <!-- Pruebas de APIs -->
+                                <div class="principle-card horizontal">
+                                    <div class="principle-content">
+                                        <h4 class="principle-name orange">Pruebas de APIs</h4>
+                                        <p class="principle-desc">Se validaron endpoints de usuario, lotes, mermas y
+                                            costos mediante Postman.</p>
+                                    </div>
+                                    <div class="principle-visual">
+                                        <img src="ResultadosQA-2.png" alt="Resultados API" class="qa-thumbnail"
+                                            onclick="openLightbox('ResultadosQA-2.png')">
+                                    </div>
+                                </div>
+
+                                <!-- Pruebas de Regresión -->
+                                <div class="principle-card horizontal">
+                                    <div class="principle-content">
+                                        <h4 class="principle-name orange">Pruebas de regresión</h4>
+                                        <p class="principle-desc">Se validó el flujo completo de la web de tambo 360
+                                            verificando que no se hayan producido errores.</p>
+                                    </div>
+                                    <div class="principle-visual">
+                                        <img src="ResultadosQA-3.png" alt="Resultados Regresión" class="qa-thumbnail"
+                                            onclick="openLightbox('ResultadosQA-3.png')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backend Detail Modal -->
+    <div id="backend-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="header-left">
+                    <div class="header-icon">
+                        <i class="ph ph-gear"></i>
+                    </div>
+                    <span class="header-title">Detalles del Rol</span>
+                </div>
+                <button id="backend-modal-close-x" class="modal-close-btn"><i class="ph ph-x"></i></button>
+            </div>
+
+            <div class="modal-body">
+                <span class="specialty-badge">ESPECIALIDAD</span>
+                <h2 class="modal-role-title"> Backend</h2>
+                <p class="modal-role-subtitle">Infraestructura, APIs y Modelado de Datos</p>
+
+                <div class="detail-timeline">
+                    <!-- Arquitectura Backend -->
+                    <div class="detail-item">
+                        <div class="detail-dot tests">
+                            <i class="ph ph-tree-structure"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h3 class="detail-title">Arquitectura e IA</h3>
+                            <div class="principles-grid">
+
+                                <div class="principle-card horizontal">
+                                    <div class="principle-content">
+                                        <h4 class="principle-name orange">Arquitectura Backend</h4>
+                                        <p class="principle-desc">Infraestructura en la nube y flujo de comunicación
+                                            entre servicios.</p>
+                                    </div>
+                                    <div class="principle-visual">
+                                        <img src="Backend-2.png" alt="Modelo de Datos" class="qa-thumbnail"
+                                            style="width: 120px; height: auto;" onclick="openLightbox('Backend-2.png')">
+                                    </div>
+                                </div>
+
+                                <div class="principle-card horizontal">
+                                    <div class="principle-content">
+                                        <h4 class="principle-name orange">Modelo de datos del sistema</h4>
+                                        <p class="principle-desc">Esquema de la base de datos.</p>
+                                    </div>
+                                    <div class="principle-visual">
+                                        <img src="Backend-1.png" alt="Arquitectura Backend" class="qa-thumbnail"
+                                            style="width: 120px; height: auto;" onclick="openLightbox('Backend-1.png')">
+                                    </div>
+                                </div>
+
+                                <div class="principle-card horizontal">
+                                    <div class="principle-content">
+                                        <h4 class="principle-name orange">Arquitectura IA</h4>
+                                        <p class="principle-desc">Integración de modelos de lenguaje y procesamiento de
+                                            datos.</p>
+                                    </div>
+                                    <div class="principle-visual">
+                                        <img src="Backend-IA.png" alt="Arquitectura IA" class="qa-thumbnail"
+                                            style="width: 120px; height: auto;"
+                                            onclick="openLightbox('Backend-IA.png')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for QA Results -->
+    <div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Full View">
+        <button class="lightbox-close"><i class="ph ph-x"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
